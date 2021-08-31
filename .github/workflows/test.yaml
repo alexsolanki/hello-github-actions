@@ -13,7 +13,5 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go }}
-      - name: Install make
-        run: apt-get install make
       - name: Test
         run: make test build
